@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0; 
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    background-color: rgb(240, 240, 240);
+    font-size: 16px;
+    font-family: 'Lexend', sans-serif;
+}
+
+
+
+/* Comienzo Header y Nav */
+nav{
+    width: 100%;
+    background-color: white;
+    padding: 30px;
+    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    letter-spacing: 0.1cm;
+    box-shadow: 1px 0px 10px 1px gray;
+    position: fixed;
+}
+
+nav .button-nav-contacto , .button{
+    background-color: rgb(12, 112, 21);
+    border-radius: 40px;
+    padding: 10px 25px; 
+    text-align: center;
+    color:white;
+    margin:0;
+}
+nav .button-nav-contacto:hover , .button:hover{
+    background-color: rgb(56, 150, 64);
+}
+nav .button-nav:hover , .cajas-redes-contacto:hover .button-redes{
+    color:green;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+
+nav ul li .button-nav , nav ul li .button-nav-contacto{
+    height:30px;
+    display: inline;
+    text-transform: uppercase;
+    margin: 25px;
+}
+
+li{
+    display: inline;
+    list-style: none;
+}
+
+/* Fin Header y Nav */
+
+
+
+/* Comienzo Main*/
+main{
+    width: 100vw;
+}
+
+
+/* Comienzo Section1 > Hola */
+
+section#Hola{
+    width: 100vw;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+section#Hola .container_hola{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.cajahola{
+    width: 50%;
+    height: 90%;
+    padding:30px 50px;
+    flex-basis: 40%;
+}
+
+h2{
+    font-size: 35px;
+}
+
+h1{
+    font-size: 45px;
+    color:rgb(12, 112, 21);
+}
+
+.button{
+    width:150px;
+    background-color:  rgb(12, 112, 21);
+    border-radius: 30px;
+    padding: 10px 25px; 
+    text-align: center;
+    color:white;
+    margin-top:30px;
+}
+
+/* Fin Section1 > Hola */ 
+
+
+
+/* Comienzo Section2 > Conocimientos */
+
+section#Conocimientos .container_conocimiento , section#Proyectos .container_proyectos{
+    width: 100vw;
+    padding: 150px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.encabezado_conocimientos , .description-proyectos{
+    width: 80%;
+    height: 20%;
+    text-align: center;
+}
+
+.title{
+    font-size: 50px;
+    padding-bottom: 30px;
+    font-weight: 900;
+    color:rgb(35, 35, 36);
+    letter-spacing: 00.1cm;
+}
+
+.pundertitle{
+    width:50%;
+    font-size: 20px;
+    margin: 0px auto;
+    font-size: 1em;
+    padding-bottom: 70px;
+}
+
+.caja_conocimientos{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px auto;
+}
+
+.cajaconocimiento{
+    border: 1px solid white;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    padding: 50px;
+    margin: 35px;
+    flex-basis: 25%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#Conocimientos .container_conocimiento .caja_conocimientos .cajaconocimiento .fab{
+    font-size: 80px;
+    color:rgb(152, 218, 132);
+}
+#Conocimientos .container_conocimiento .caja_conocimientos .cajaconocimiento p{
+    padding-top:8px;
+    font-size: 18px;
+}
+
+
+.cajaconocimiento:hover , .cajas-proyectos:hover{
+    border: 1px solid rgb(12, 112, 21);
+    color:rgb(12, 112, 21);
+}
+
+/* Fin Section2 > Conocimientos */
+
+
+
+/* Comienzo Section3 > Someone */
+
+section .container_someone{
+    width: 100vw;
+    background-color: rgb(199, 195, 195);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+h3{
+    font-size: 30px;
+    font-weight: 900;
+    padding-top: 50px;
+}
+
+blockquote{
+    width:60%;
+    font-style: italic;
+    text-align: center;
+    padding-top:50px;
+}
+
+/* Fin Section3 > Someone */
+
+
+
+
+/* Comienzo Section4 > Proyectos*/
+
+
+section #Proyectos .container_proyectos .description-proyectos{
+    height: 15%;
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+#Proyectos .container_proyectos .caja_proyectos{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Proyectos .container_proyectos .caja_proyectos .cajasproyectos{
+    height: 30%;
+    width: 30%;
+    margin: 15px;
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 10px;
+    padding: 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 900;
+}
+
+#Proyectos .container_proyectos .caja_proyectos .cajasproyectos:hover{
+    border: 1px solid rgb(12, 112, 21);
+    color: rgb(12, 112, 21);
+}
+
+
+
+/* POR QUE NO ME TOMA UN PADDING 0, SE ME ROMPE EL SECTION ABAJO. como uso el flex-basis y flex-shrink.
+Fin Section4 > Proyectos*/
+
+
+
+/* Comienzo Section5 > Contacto*/
+
+section#Contacto{
+    padding: 200px 150px;
+    background-color: #f7f7f7;
+
+}
+section#Contacto .container-contacto{
+    display: flex;
+    padding: 100px 50px;
+    border: 1px solid #d4d0d0;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#Contacto .caja-contacto , #Contacto .caja-escribime{
+    flex-direction: column;
+    flex-grow: 1;
+    flex-basis: 40%;
+    padding:15px;
+}
+#Contacto .container-contacto .caja-contacto .redes{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+#Contacto .container-contacto .caja-contacto .padding-h2 , #Contacto .container-contacto .caja-escribime .padding-h2 {
+    padding-bottom: 50px;
+}
+
+.comm{
+    height: 150px;
+}
+.cajas-redes-contacto{
+    padding: 20px;
+    width: 60%;   
+}
+
+/* 
+#Contacto .container-contacto .caja-contacto .redes .cajas-redes-contacto:XXXXX{
+    border: 1px solid blueviolet;
+    box-shadow:1px 0px 10px 1px blueviolet; 
+    border-radius: 15px;
+}
+FALTA AGREGAR EL EFECTO CUANDO after click >> clase 14 - 15/7 
+*/
+
+.svg-redes , footer .footermedia .button-redes .svg-redes:hover{
+    color:rgb(12, 112, 21);
+    background-color: white;
+    font-size: 23px;
+    width: 37px;
+    height: 37px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid white;
+}
+
+
+#Contacto .container-contacto .caja-contacto .redes .cajas-redes-contacto:hover .svg-redes , footer .footermedia .button-redes .svg-redes{
+    color: white;
+    border-radius: 50px;
+    width: 37px;
+    height: 37px;
+    background-color: rgb(12, 112, 21);
+    font-size: 23px;
+    padding: 5px;
+}
+
+#Contacto .container-contacto .caja-contacto .redes .cajas-redes-contacto:hover .button-redes{
+    color: rgb(12, 112, 21);
+}
+
+
+.two-columns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;    
+}
+
+.column1{
+    width: 45%;
+}
+
+.c-input{
+    background-color: rgb(233, 233, 233);
+    color: black;
+    border-radius: 15px;
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid rgb(233, 233, 233);
+}
+
+/* Fin Section5 > Contacto*/
+
+
+
+
+/* Comienzo Footer */
+
+footer{
+    width: 100%;
+    background-color: rgb(12, 112, 21);
+    display: flex;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    color: white;
+}
+.footerbuttons , .footermedia , .footersigned{
+    text-align: center;
+    width:50%;
+    margin:auto;
+}
+
+.buttonfooter a, .footermedia{
+    color:white;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 50px 20px;
+}
+
+footer .footermedia .cajas-redes-contacto{
+    display:inline;
+}
+
+
+/* Fin Footer */
