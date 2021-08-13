@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&family=Uchen&display=swap');
 
 *{
     box-sizing: border-box;
@@ -12,7 +13,6 @@ body{
     font-size: 16px;
     font-family: 'Lexend', sans-serif;
 }
-
 
 
 /* Comienzo Header y Nav */
@@ -65,7 +65,7 @@ li{
 
 
 
-/* Comienzo Main*/
+/* Comienzo Main */
 main{
     width: 100vw;
 }
@@ -73,14 +73,14 @@ main{
 
 /* Comienzo Section1 > Hola */
 
-section#Hola{
+section#hola{
     width: 100vw;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
 }
 
-section#Hola .container_hola{
+section#hola .container_hola{
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -102,7 +102,9 @@ h2{
 }
 
 h1{
-    font-size: 45px;
+    font-size: 50px;
+    letter-spacing: 0.1cm;
+    font-family: 'Jost', sans-serif;
     color:rgb(12, 112, 21);
 }
 
@@ -122,9 +124,9 @@ h1{
 
 /* Comienzo Section2 > Conocimientos */
 
-section#Conocimientos .container_conocimiento , section#Proyectos .container_proyectos{
+section#conocimientos .container_conocimiento , section#proyectos .container_proyectos{
     width: 100vw;
-    padding: 150px;
+    padding: 150px 0;
     display:flex;
     justify-content: flex-start;
     align-items: center;
@@ -155,30 +157,32 @@ section#Conocimientos .container_conocimiento , section#Proyectos .container_pro
 }
 
 .caja_conocimientos{
-    width: 80%;
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
     margin: 0px auto;
+    justify-content: center;
 }
 
 .cajaconocimiento{
-    border: 1px solid white;
+    border: 1px solid rgb(224, 224, 224);
     border-radius: 30px;
     background-color: white;
     display: flex;
     padding: 50px;
-    margin: 35px;
-    flex-basis: 25%;
+    margin: 10px;
+    width: 230px;
+    flex-basis: 27%;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 
-#Conocimientos .container_conocimiento .caja_conocimientos .cajaconocimiento .fab{
+#conocimientos .container_conocimiento .caja_conocimientos .cajaconocimiento .fab{
     font-size: 80px;
     color:rgb(152, 218, 132);
 }
-#Conocimientos .container_conocimiento .caja_conocimientos .cajaconocimiento p{
+#conocimientos .container_conocimiento .caja_conocimientos .cajaconocimiento p{
     padding-top:8px;
     font-size: 18px;
 }
@@ -224,8 +228,7 @@ blockquote{
 
 /* Comienzo Section4 > Proyectos*/
 
-
-section #Proyectos .container_proyectos .description-proyectos{
+section #proyectos .container_proyectos .description-proyectos{
     height: 15%;
     width: 60%;
     text-align: center;
@@ -233,15 +236,14 @@ section #Proyectos .container_proyectos .description-proyectos{
     padding: 50px 0;
 }
 
-#Proyectos .container_proyectos .caja_proyectos{
-    width: 100%;
+#proyectos .container_proyectos .caja_proyectos{
+    width: 70%;
     display: flex;
     flex-wrap: wrap;
+    margin: 0px auto;
 }
 
-#Proyectos .container_proyectos .caja_proyectos .cajasproyectos{
-    height: 30%;
-    width: 30%;
+#proyectos .container_proyectos .caja_proyectos .cajasproyectos{
     margin: 15px;
     border: 1px solid rgb(151, 151, 151);
     border-radius: 10px;
@@ -251,28 +253,26 @@ section #Proyectos .container_proyectos .description-proyectos{
     flex-direction: column;
     align-items: center;
     font-weight: 900;
+    flex-basis: 29%;
 }
 
-#Proyectos .container_proyectos .caja_proyectos .cajasproyectos:hover{
+#proyectos .container_proyectos .caja_proyectos .cajasproyectos:hover{
     border: 1px solid rgb(12, 112, 21);
     color: rgb(12, 112, 21);
 }
 
-
-
-/* POR QUE NO ME TOMA UN PADDING 0, SE ME ROMPE EL SECTION ABAJO. como uso el flex-basis y flex-shrink.
-Fin Section4 > Proyectos*/
+/* Fin Section4 > Proyectos*/
 
 
 
 /* Comienzo Section5 > Contacto*/
 
-section#Contacto{
+section#contacto{
     padding: 200px 150px;
     background-color: #f7f7f7;
 
 }
-section#Contacto .container-contacto{
+section#contacto .container-contacto{
     display: flex;
     padding: 100px 50px;
     border: 1px solid #d4d0d0;
@@ -280,19 +280,19 @@ section#Contacto .container-contacto{
     border-radius: 10px;
 }
 
-#Contacto .caja-contacto , #Contacto .caja-escribime{
+#contacto .caja-contacto , #Contacto .caja-escribime{
     flex-direction: column;
     flex-grow: 1;
     flex-basis: 40%;
     padding:15px;
 }
-#Contacto .container-contacto .caja-contacto .redes{
+#contacto .container-contacto .caja-contacto .redes{
     display: flex;
     flex-direction: column;
     margin-top: 25px;
 }
 
-#Contacto .container-contacto .caja-contacto .padding-h2 , #Contacto .container-contacto .caja-escribime .padding-h2 {
+#contacto .container-contacto .caja-contacto .padding-h2 , #Contacto .container-contacto .caja-escribime .padding-h2 {
     padding-bottom: 50px;
 }
 
@@ -300,8 +300,8 @@ section#Contacto .container-contacto{
     height: 150px;
 }
 .cajas-redes-contacto{
-    padding: 20px;
-    width: 60%;   
+    padding: 10px;
+    display: flex;
 }
 
 /* 
@@ -314,7 +314,7 @@ FALTA AGREGAR EL EFECTO CUANDO after click >> clase 14 - 15/7
 */
 
 .svg-redes , footer .footermedia .button-redes .svg-redes:hover{
-    color:rgb(12, 112, 21);
+    color: #389640;
     background-color: white;
     font-size: 23px;
     width: 37px;
@@ -325,18 +325,18 @@ FALTA AGREGAR EL EFECTO CUANDO after click >> clase 14 - 15/7
 }
 
 
-#Contacto .container-contacto .caja-contacto .redes .cajas-redes-contacto:hover .svg-redes , footer .footermedia .button-redes .svg-redes{
+#contacto .container-contacto .caja-contacto .redes .cajas-redes-contacto:hover .svg-redes , footer .footermedia .button-redes .svg-redes{
     color: white;
     border-radius: 50px;
     width: 37px;
     height: 37px;
-    background-color: rgb(12, 112, 21);
+    background-color: #389640;
     font-size: 23px;
     padding: 5px;
 }
 
-#Contacto .container-contacto .caja-contacto .redes .cajas-redes-contacto:hover .button-redes{
-    color: rgb(12, 112, 21);
+#contacto .container-contacto .caja-contacto .redes .cajas-redes-contacto:hover .button-redes{
+    color: #389640;
 }
 
 
@@ -370,7 +370,7 @@ FALTA AGREGAR EL EFECTO CUANDO after click >> clase 14 - 15/7
 
 footer{
     width: 100%;
-    background-color: rgb(12, 112, 21);
+    background-color: #389640;
     display: flex;
     display: inline-block;
     justify-content: center;
@@ -380,7 +380,7 @@ footer{
 }
 .footerbuttons , .footermedia , .footersigned{
     text-align: center;
-    width:50%;
+    width:70%;
     margin:auto;
 }
 
@@ -392,8 +392,36 @@ footer{
 }
 
 footer .footermedia .cajas-redes-contacto{
-    display:inline;
+    display: inline;
 }
 
 
-/* Fin Footer */
+/* Responsive*/
+@media (max-width:1101px){
+    header{
+        display:none;
+    }
+    section#hola .container_hola{
+        flex-direction: column;
+    }
+    .cajaconocimiento{
+        min-width: 230px;
+    }
+}
+
+@media (max-width:900px){
+    .container-contacto{
+        flex-direction: column;
+    }
+    .redes{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /*no puedo poner las cajas en bloques*/
+    .cajas-redes-contacto{
+        flex-direction: row;
+        flex-basis: 50%;
+    }
+}
+
+
