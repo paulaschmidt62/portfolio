@@ -280,7 +280,7 @@ section#contacto .container-contacto{
     border-radius: 10px;
 }
 
-#contacto .caja-contacto , #Contacto .caja-escribime{
+#contacto .caja-contacto , #contacto .caja-escribime{
     flex-direction: column;
     flex-grow: 1;
     flex-basis: 40%;
@@ -292,7 +292,7 @@ section#contacto .container-contacto{
     margin-top: 25px;
 }
 
-#contacto .container-contacto .caja-contacto .padding-h2 , #Contacto .container-contacto .caja-escribime .padding-h2 {
+#contacto .container-contacto .caja-contacto .padding-h2 , #contacto .container-contacto .caja-escribime .padding-h2 {
     padding-bottom: 50px;
 }
 
