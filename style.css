@@ -268,7 +268,7 @@ section #proyectos .container_proyectos .description-proyectos{
 /* Comienzo Section5 > Contacto*/
 
 section#contacto{
-    padding: 200px 150px;
+    padding: 150px 100px;
     background-color: #f7f7f7;
 
 }
@@ -302,12 +302,14 @@ section#contacto .container-contacto{
 .cajas-redes-contacto{
     padding: 10px;
     display: flex;
+    width: 60%;
+    flex-basis: 50%;
 }
 
 /* 
 #Contacto .container-contacto .caja-contacto .redes .cajas-redes-contacto:XXXXX{
-    border: 1px solid blueviolet;
-    box-shadow:1px 0px 10px 1px blueviolet; 
+    border: 1px solid #389640;
+    box-shadow:1px 0px 10px 1px #389640; 
     border-radius: 15px;
 }
 FALTA AGREGAR EL EFECTO CUANDO after click >> clase 14 - 15/7 
@@ -420,7 +422,13 @@ footer .footermedia .cajas-redes-contacto{
     /*no puedo poner las cajas en bloques*/
     .cajas-redes-contacto{
         flex-direction: row;
-        flex-basis: 50%;
+        width: 50%;
+    }
+    .responsive-redes{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
     }
 }
 
